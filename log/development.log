@@ -414,3 +414,8 @@ Completed in 4ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
 Processing TestController#index (for 127.0.0.1 at 2010-03-03 18:54:25) [GET]
 Rendering test/index
 Completed in 4ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-03 19:50:24) [GET]
+Rendering test/index
+Completed in 17ms (View: 13 | 200 OK [http://nimble-nodes-test.local/test]
