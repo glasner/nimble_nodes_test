@@ -1,1 +1,1 @@
-nimble_nodes
+nimble_nodes --version '= 0.1.1'
