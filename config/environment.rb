@@ -1,3 +1,4 @@
+require 'nimble_nodes'
 ENV['NN_TOKEN'] = 'd023976b627e2bf043e2ac4e8cd567ad'
 
 # Be sure to restart your server when you modify this file
