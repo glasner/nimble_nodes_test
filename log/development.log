@@ -678,3 +678,1052 @@ The error occurred while evaluating nil.+
 
 Processing TestController#index (for 127.0.0.1 at 2010-03-23 10:15:22) [GET]
 Completed in 19ms (View: 6 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 09:30:39) [GET]
+Completed in 17ms (View: 8 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 09:32:01) [GET]
+
+NameError (uninitialized constant NimbleNodes::Settings::LOCAL):
+  app/controllers/test_controller.rb:3:in `index'
+  lib/nimble_nodes/lib/nimble_nodes/middleware.rb:11:in `call'
+  lib/nimble_nodes/lib/nimble_nodes/middleware.rb:11:in `call'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (69.0ms)
+Rendered rescues/_request_and_response (2.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 09:32:08) [GET]
+
+NameError (uninitialized constant TestController::LOCAL):
+  app/controllers/test_controller.rb:3:in `index'
+  lib/nimble_nodes/lib/nimble_nodes/middleware.rb:11:in `call'
+  lib/nimble_nodes/lib/nimble_nodes/middleware.rb:11:in `call'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (63.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 09:32:45) [GET]
+
+NameError (uninitialized constant NimbleNodes::LOCAL):
+  app/controllers/test_controller.rb:3:in `index'
+  lib/nimble_nodes/lib/nimble_nodes/middleware.rb:11:in `call'
+  lib/nimble_nodes/lib/nimble_nodes/middleware.rb:11:in `call'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (63.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 09:32:52) [GET]
+
+NameError (uninitialized constant NimbleNodes::Settings::LOCAL):
+  app/controllers/test_controller.rb:3:in `index'
+  lib/nimble_nodes/lib/nimble_nodes/middleware.rb:11:in `call'
+  lib/nimble_nodes/lib/nimble_nodes/middleware.rb:11:in `call'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (58.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 09:34:41) [GET]
+
+NameError (uninitialized constant NimbleNodes::Settings::LOCAL):
+  app/controllers/test_controller.rb:3:in `index'
+  lib/nimble_nodes/lib/nimble_nodes/middleware.rb:11:in `call'
+  lib/nimble_nodes/lib/nimble_nodes/middleware.rb:11:in `call'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (60.9ms)
+Rendered rescues/_request_and_response (2.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 09:35:05) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  lib/nimble_nodes/lib/nimble_nodes/app.rb:22:in `path'
+  lib/nimble_nodes/lib/nimble_nodes/settings.rb:13:in `fetch_from_server'
+  lib/nimble_nodes/lib/nimble_nodes/settings.rb:8:in `hash'
+  app/controllers/test_controller.rb:3:in `index'
+  lib/nimble_nodes/lib/nimble_nodes/middleware.rb:11:in `call'
+  lib/nimble_nodes/lib/nimble_nodes/middleware.rb:11:in `call'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (58.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+/!\ FAILSAFE /!\  Fri Mar 26 09:44:55 -0400 2010
+  Status: 500 Internal Server Error
+  wrong number of arguments (1 for 2)
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:14:in `get'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:14:in `fetch_from_server'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:8:in `hash'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:20:in `[]'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes.rb:11:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/dynos.rb:35:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/middleware.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/bin/passenger-spawn-server:61
+/!\ FAILSAFE /!\  Fri Mar 26 09:46:00 -0400 2010
+  Status: 500 Internal Server Error
+  wrong number of arguments (1 for 2)
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:14:in `get'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:14:in `fetch_from_server'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:8:in `hash'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:20:in `[]'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes.rb:11:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/dynos.rb:35:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/middleware.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/bin/passenger-spawn-server:61
+/!\ FAILSAFE /!\  Fri Mar 26 09:46:06 -0400 2010
+  Status: 500 Internal Server Error
+  getaddrinfo: nodename nor servname provided, or not known
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `initialize'
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `open'
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `connect'
+    /usr/local/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    /usr/local/lib/ruby/1.8/timeout.rb:93:in `timeout'
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `connect'
+    /usr/local/lib/ruby/1.8/net/http.rb:553:in `do_start'
+    /usr/local/lib/ruby/1.8/net/http.rb:542:in `start'
+    /usr/local/lib/ruby/1.8/net/http.rb:440:in `start'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/server.rb:10:in `get'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:14:in `fetch_from_server'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:8:in `hash'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:20:in `[]'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes.rb:11:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/dynos.rb:35:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/middleware.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/bin/passenger-spawn-server:61
+/!\ FAILSAFE /!\  Fri Mar 26 09:46:48 -0400 2010
+  Status: 500 Internal Server Error
+  getaddrinfo: nodename nor servname provided, or not known
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `initialize'
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `open'
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `connect'
+    /usr/local/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    /usr/local/lib/ruby/1.8/timeout.rb:93:in `timeout'
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `connect'
+    /usr/local/lib/ruby/1.8/net/http.rb:553:in `do_start'
+    /usr/local/lib/ruby/1.8/net/http.rb:542:in `start'
+    /usr/local/lib/ruby/1.8/net/http.rb:440:in `start'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/server.rb:10:in `get'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:14:in `fetch_from_server'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:8:in `hash'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:20:in `[]'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes.rb:11:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/dynos.rb:35:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/middleware.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/bin/passenger-spawn-server:61
+/!\ FAILSAFE /!\  Fri Mar 26 09:47:58 -0400 2010
+  Status: 500 Internal Server Error
+  getaddrinfo: nodename nor servname provided, or not known
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `initialize'
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `open'
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `connect'
+    /usr/local/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    /usr/local/lib/ruby/1.8/timeout.rb:93:in `timeout'
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `connect'
+    /usr/local/lib/ruby/1.8/net/http.rb:553:in `do_start'
+    /usr/local/lib/ruby/1.8/net/http.rb:542:in `start'
+    /usr/local/lib/ruby/1.8/net/http.rb:440:in `start'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/server.rb:10:in `get'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:14:in `fetch_from_server'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:8:in `hash'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:20:in `[]'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes.rb:11:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/dynos.rb:35:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/middleware.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/bin/passenger-spawn-server:61
+/!\ FAILSAFE /!\  Fri Mar 26 09:56:42 -0400 2010
+  Status: 500 Internal Server Error
+  You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.split
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/server.rb:37:in `uri_with_token'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/server.rb:11:in `get'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:14:in `fetch_from_server'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:8:in `hash'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:20:in `[]'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes.rb:11:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/dynos.rb:35:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/middleware.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/bin/passenger-spawn-server:61
+/!\ FAILSAFE /!\  Fri Mar 26 09:57:42 -0400 2010
+  Status: 500 Internal Server Error
+  getaddrinfo: nodename nor servname provided, or not known
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `initialize'
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `open'
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `connect'
+    /usr/local/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    /usr/local/lib/ruby/1.8/timeout.rb:93:in `timeout'
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `connect'
+    /usr/local/lib/ruby/1.8/net/http.rb:553:in `do_start'
+    /usr/local/lib/ruby/1.8/net/http.rb:542:in `start'
+    /usr/local/lib/ruby/1.8/net/http.rb:440:in `start'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/server.rb:13:in `get'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:14:in `fetch_from_server'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:8:in `hash'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:20:in `[]'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes.rb:11:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/dynos.rb:35:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/middleware.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/bin/passenger-spawn-server:61
+/!\ FAILSAFE /!\  Fri Mar 26 10:08:24 -0400 2010
+  Status: 500 Internal Server Error
+  relative URI: nimble-nodes.local
+    /usr/local/lib/ruby/1.8/uri/generic.rb:919:in `route_from'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/server.rb:12:in `get'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:14:in `fetch_from_server'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:8:in `hash'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:20:in `[]'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes.rb:11:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/dynos.rb:35:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/middleware.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/bin/passenger-spawn-server:61
+/!\ FAILSAFE /!\  Fri Mar 26 10:09:03 -0400 2010
+  Status: 500 Internal Server Error
+  undefined method `empty?' for #<URI::Generic:0x102b21f58>
+    /usr/local/lib/ruby/1.8/net/http.rb:1470:in `initialize'
+    /usr/local/lib/ruby/1.8/net/http.rb:1588:in `initialize'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/server.rb:12:in `new'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/server.rb:12:in `get'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:14:in `fetch_from_server'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:8:in `hash'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:20:in `[]'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes.rb:11:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/dynos.rb:35:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/middleware.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/bin/passenger-spawn-server:61
+/!\ FAILSAFE /!\  Fri Mar 26 10:09:47 -0400 2010
+  Status: 500 Internal Server Error
+  getaddrinfo: nodename nor servname provided, or not known
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `initialize'
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `open'
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `connect'
+    /usr/local/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    /usr/local/lib/ruby/1.8/timeout.rb:93:in `timeout'
+    /usr/local/lib/ruby/1.8/net/http.rb:560:in `connect'
+    /usr/local/lib/ruby/1.8/net/http.rb:553:in `do_start'
+    /usr/local/lib/ruby/1.8/net/http.rb:542:in `start'
+    /usr/local/lib/ruby/1.8/net/http.rb:440:in `start'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/server.rb:13:in `get'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:14:in `fetch_from_server'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:8:in `hash'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:20:in `[]'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes.rb:11:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/dynos.rb:35:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/middleware.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/bin/passenger-spawn-server:61
+/!\ FAILSAFE /!\  Fri Mar 26 13:05:31 -0400 2010
+  Status: 500 Internal Server Error
+  undefined method `[]' for NimbleNodes:Module
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/dynos.rb:9:in `[]'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/dynos.rb:35:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/middleware.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/bin/passenger-spawn-server:61
+/!\ FAILSAFE /!\  Fri Mar 26 13:06:13 -0400 2010
+  Status: 500 Internal Server Error
+  You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/dynos.rb:9:in `[]'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/dynos.rb:35:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/middleware.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/bin/passenger-spawn-server:61
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 13:09:26) [GET]
+Completed in 9ms (View: 5 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 13:10:00) [GET]
+Completed in 8ms (View: 4 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 13:10:10) [GET]
+Completed in 4ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 13:10:15) [GET]
+Completed in 5ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 13:10:25) [GET]
+Completed in 5ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 13:12:49) [GET]
+Completed in 5ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+/!\ FAILSAFE /!\  Fri Mar 26 14:05:42 -0400 2010
+  Status: 500 Internal Server Error
+  undefined method `get' for NimbleNodes::Server:Class
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:14:in `fetch_from_server'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:8:in `hash'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/settings.rb:20:in `[]'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes.rb:11:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/dynos.rb:35:in `active?'
+    /Users/glasner/code/nimble_nodes_test/lib/nimble_nodes/lib/nimble_nodes/middleware.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9/bin/passenger-spawn-server:61
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 14:06:26) [GET]
+Completed in 8ms (View: 4 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 14:06:33) [GET]
+Completed in 5ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 14:06:37) [GET]
+Completed in 5ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 14:06:38) [GET]
+Completed in 5ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 14:08:18) [GET]
+Completed in 384ms (View: 6 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 14:08:20) [GET]
+Completed in 381ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 14:08:22) [GET]
+Completed in 269ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 14:19:36) [GET]
+Completed in 7ms (View: 4 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 14:20:29) [GET]
+Completed in 8ms (View: 4 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 14:21:45) [GET]
+Completed in 9ms (View: 4 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 21:21:21) [GET]
+Completed in 12ms (View: 6 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 21:22:02) [GET]
+Completed in 6ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 21:24:40) [GET]
+Completed in 5ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 21:36:41) [GET]
+Completed in 9ms (View: 4 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 21:39:26) [GET]
+Completed in 4ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 21:52:16) [GET]
+Completed in 9ms (View: 5 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 21:52:17) [GET]
+Completed in 4ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 21:52:18) [GET]
+Completed in 5ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 21:52:19) [GET]
+Completed in 5ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 21:52:20) [GET]
+Completed in 4ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-26 21:52:21) [GET]
+Completed in 5ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-27 14:29:30) [GET]
+Completed in 10ms (View: 5 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-28 10:27:49) [GET]
+Completed in 12ms (View: 6 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-28 10:47:13) [GET]
+Completed in 9ms (View: 5 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-28 10:47:19) [GET]
+Completed in 5ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-28 10:47:52) [GET]
+Completed in 9ms (View: 5 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-28 10:48:06) [GET]
+Completed in 5ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-28 10:49:48) [GET]
+Completed in 9ms (View: 5 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-28 10:54:05) [GET]
+Completed in 9ms (View: 5 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-28 10:54:46) [GET]
+Completed in 5ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-28 10:55:06) [GET]
+Completed in 9ms (View: 5 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-28 13:38:14) [GET]
+Completed in 10ms (View: 6 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-28 13:42:17) [GET]
+Completed in 9ms (View: 5 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-28 14:06:05) [GET]
+
+NoMethodError (undefined method `uri' for #<ActionController::Request:0x1023c6718>):
+  app/controllers/test_controller.rb:3:in `index'
+  lib/nimble_nodes/lib/nimble_nodes/middleware.rb:11:in `call'
+  lib/nimble_nodes/lib/nimble_nodes/middleware.rb:11:in `call'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (58.9ms)
+Rendered rescues/_request_and_response (2.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-28 14:08:28) [GET]
+Completed in 10ms (View: 6 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-28 14:09:23) [GET]
+Completed in 9ms (View: 5 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-28 14:12:55) [GET]
+Completed in 5ms (View: 1 | 200 OK [http://nimble-nodes-test.local/test]
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-03-28 14:13:12) [GET]
+Completed in 9ms (View: 5 | 200 OK [http://nimble-nodes-test.local/test]

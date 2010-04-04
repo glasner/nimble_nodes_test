@@ -16,4 +16,7 @@ config.action_controller.perform_caching             = false
 # Don't care if the mailer can't send
 config.action_mailer.raise_delivery_errors = false
 
-ENV['NN_SERVER_DOMAIN'] = 'nimble-nodes.local'
+# NimbleNodes constants set via Heroku API in production
+ENV['NIMBLE_NODES_DOMAIN'] = 'nimble-nodes.local'
+ENV['NIMBLE_NODES_APP_NAME'] = 'nimble-nodes-test'
+ENV['NIMBLE_NODES_APP_TOKEN'] = 'cf49012f958e82c9fbd362ba42461b77'
